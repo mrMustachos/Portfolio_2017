@@ -1,0 +1,419 @@
+////////////////////////////////////////////////////////////////////////
+// From style.scss /////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+// @mixin poop($properties, $min-vw, $max-vw, $min-value, $max-value) {
+// 	@each $property in $properties {
+// 		#{$property}: $min-value;
+// 	}
+	
+// 	@include min_bpSize_straight($min-vw) {
+// 		@each $property in $properties {
+// 			#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+// 		}
+// 	}
+
+// 	@include min_bpSize_straight($max-vw) {
+// 		@each $property in $properties {
+// 			#{$property}: $max-value;
+// 		}
+// 	}
+// }
+
+// .farts {
+// 	@include poop(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
+// }
+
+
+
+
+
+// @mixin make_progress($val, $col, $size, $shape){
+
+// 	progress[value="#{$val}"] {
+// 		color: #{$col};
+// 		width: #{$size};
+
+// 		&::-webkit-progress-value {
+// 			background-color: #{$col};
+// 			right: #{$shape};
+// 		}
+
+// 		&::-moz-progress-bar {
+// 			background-color: #{$col};
+// 			right: #{$shape};
+// 		}
+// 	}
+// }
+
+// @mixin progress-value($value-color...) {
+	
+// 	@each $progress in $value-color {
+// 		$progress-name: nth($progress, 1);
+// 		$progress-width: nth(nth($progress, 2), 1);
+// 		$progress-ams: nth(nth($progress, 2), 2);
+// 		$progress-taco: nth($progress, 3);
+
+// 		@include make_progress($progress-name, $progress-width, $progress-ams, $progress-taco);
+// 	}
+// }
+
+// // Calling the mixin
+// @include progress-value((ham, (0.25, #de2b23), farts));
+
+// // and with a multideimensional list
+// // @include progress-value((ham, (0.25, #de2b23), farts), (shrimp, (0.27, #coffee), gas));
+
+
+////////////////////////////////////////////////////////////////////////
+
+// $default: 1;
+// $steak: 9;
+
+// @mixin test($a, $p: null, $e: null) {
+	
+// 	@if ($p) {
+// 		/* Do something if $p is passed */
+// 		width: $a;
+// 		value: $p;
+// 		height: $e;
+// 	}
+
+// 	@else {
+// 		$p: $default;
+// 		$e: $steak;
+// 		/* Do something else if $p is not passed */
+// 		width: $a;
+// 		value: $p;
+// 		height: $e;
+// 	}
+// }
+
+// test1 {
+// 	@include test(800px);
+// }
+
+// test2 {
+// 	@include test(600px, 1);
+// }
+
+// test3 {
+// 	@include test(400px, 1, 45px);
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// $min_Screen: 320px;
+// $medium_Screen: 480px;
+// $large_Screen: 800px;
+// $max_Screen: 1140px;
+
+// @mixin make_progress($val, $col, $size, $shape, $fart){
+
+// 	progress[value="#{$val}"] {
+// 		color: #{$val};
+// 		width: #{$col};
+// 		height: #{$size};
+// 		left: #{$shape};
+// 		right: #{$fart};
+// 	}
+// }
+
+// @mixin why_not($working_it...) {
+
+// 	@each $progress in $working_it {
+
+// 		// @if length($progress) == 2 {
+// 		// 	$f_name: nth($progress, 1);
+// 		// 	$l_name: nth($progress, 2);
+// 		// 	$date: $min_Screen;
+
+// 		// 	@include make_progress($f_name, $l_name, $date);
+// 		// }
+
+// 		@if length($progress) == 4 {
+// 			$prop: nth($progress, 1);
+// 			$min_vw: nth($progress, 2);
+// 			// $max_vw: calculateRem($px_size);
+// 			$min_val: nth(nth($progress, 3), 1);
+// 			$max_val: nth(nth($progress, 3), 2);
+
+// 			@if $min_vw == min {
+// 				$min_vw: $min_Screen;
+// 				@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 			}
+
+// 			@if $min_vw == m_bp {
+// 				$min_vw: $medium_Screen;
+// 				@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 			}
+
+// 			@else if $min_vw == l_bp {
+// 				$min_vw: $large_Screen;
+// 				@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 			}
+
+// 			@else if $min_vw == max {
+// 				$min_vw: $max_Screen;
+// 				@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 			}
+
+// 			@else {
+// 				@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 			}
+// 		}
+// 	}
+// }
+
+
+// @mixin progress-value($value-color...) {
+	
+// 	@each $progress in $value-color {
+// 		$prop: nth($progress, 1);
+// 		$min_vw: nth($progress, 2);
+// 		$max_vw: calculateRem($px_size)
+// 		$min_val: nth(nth($progress, 3), 1);
+// 		$max_val: nth(nth($progress, 3), 2);
+
+// 		@include make_progress($prop, $min_vw, $min_val, $max_val, $min_vw);
+// 	}
+// }
+
+// @include why_not((font-size, min, (45px, 102px)));
+
+
+// @function strip-unit($value) {
+// 	@return $value / ($value * 0 + 1);
+// }
+
+// @function calculateRem($px_size) {
+// 	$remSize: #{strip-unit($px_size / $base_font_size)};
+// 	@return #{$remSize}rem;
+// }
+
+// test4 {
+// 	@include why_not((font-size, min, (45px, 102px)));
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// @mixin make_progress($val, $col, $size){
+
+// 	p {
+// 		color: #{$val};
+// 		width: #{$col};
+// 		height: #{$size};
+// 	}
+// }
+
+// @mixin why_not($working_it...) {
+
+// 	@each $progress in $working_it {
+
+// 		@if length($progress) == 2 {
+// 			$f_name: nth($progress, 1);
+// 			$l_name: nth($progress, 2);
+// 			$date: $min_Screen;
+
+// 			@include make_progress($f_name, $l_name, $date);
+// 		}
+
+// 		@if length($progress) == 3 {
+// 			$f_name: nth($progress, 1);
+// 			$l_name: nth($progress, 2);
+// 			$date: nth($progress, 3);
+
+// 			@if $date == m_bp {
+// 				$date: $medium_Screen;
+// 				@include make_progress($f_name, $l_name, $date);
+// 			}
+
+// 			@else if $date == l_bp {
+// 				$date: $large_Screen;
+// 				@include make_progress($f_name, $l_name, $date);
+// 			}
+
+// 			@else if $date == max {
+// 				$date: $max_Screen;
+// 				@include make_progress($f_name, $l_name, $date);
+// 			}
+
+// 			@else {
+// 				@include make_progress($f_name, $l_name, $date);
+// 			}
+// 		}
+// 	}
+// }
+
+// @function strip-unit($value) {
+// 	@return $value / ($value * 0 + 1);
+// }
+
+// @include why_not(0.5 #FF8330 l_bp);
+
+
+////////////////////////////////////////////////////////////////////////
+// From flexText-index.scss ////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+
+// [property]: calc([min_property][unit] + ([max_property] - [min_property]) * ((100vw - [min_width][unit]) / ([max_width] - [min_width])));
+
+// @mixin flexText_break-2($properties, $min-vw, $mid-vw, $max-vw, $min-value, $e-min-value, $mid-value, $max-value) {
+// 	& {
+// 		@each $property in $properties {
+// 			#{$property}: $min-value;
+// 		}
+
+// 		@media screen and (min-width: $min-vw) {
+// 			@each $property in $properties {
+// 				#{$property}: calc(#{$min-value} + #{strip-unit($e-min-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit(($mid-vw - 1) - $min-vw)}));
+// 			}
+// 		}
+
+// 		@media screen and (min-width: $mid-vw) {
+// 			@each $property in $properties {
+// 				#{$property}: calc(#{$mid-value} + #{strip-unit($max-value - $mid-value)} * ((100vw - #{$mid-vw}) / #{strip-unit($max-vw - $mid-vw)}));
+// 			}
+// 		}
+
+// 		@media screen and (min-width: $max-vw) {
+// 			@each $property in $properties {
+// 				#{$property}: $max-value;
+// 			}
+// 		}
+// 	}
+// }
+
+// @mixin flexText2_remConvert($ft_units...) {
+// 	@each $progress in $ft_units {
+
+// 		$a: nth($progress,1);
+// 		$b: nth($progress,2);
+// 		$c: nth($progress,3);
+// 		$d: nth($progress,4);
+// 		$e: nth($progress,5);
+// 		$f: nth($progress,6);
+// 		$g: nth($progress,7);
+// 		$h: nth($progress,8);
+
+// 		$BB: convert_min_vw($b);
+// 		$CC: convert_mid_vw($c);
+// 		$DD: convert_max_vw($d);
+// 		$EE: convert_min_value($e);
+// 		$FF: convert_e_min_value($f);
+// 		$GG: convert_mid_value($g);
+// 		$HH: convert_max_value($h);
+
+// 		@include flexText_break-2($a, $BB, $CC, $DD, $EE, $FF, $GG, $HH);
+// 	}
+// }
+
+// // Calling the mixin
+// @include flexText2_remConvert(0.25 #de2b23);
+// // and with a multideimensional list
+// @include flexText2_remConvert(0.5 #FF8330, 0.75 #8A9F4A, 1 #14BB64);
+
+// @function e_min_vw($value) {
+// 	@return $value / ($value * 0 + 1);
+// 	@return 
+// }
+
+// $browser_default_size: 16px;
+// // PX > REM
+// @function convert_min_vw($min-vw) {
+// 	$min_vw: #{strip-unit($min-vw / $browser_default_size)};
+// 	@return #{$min_vw}rem;
+// }
+
+// @function convert_mid_vw($mid-vw) {
+// 	$mid_vw: #{strip-unit($mid-vw / $browser_default_size)};
+// 	@return #{$mid_vw}rem;
+// }
+
+// @function convert_max_vw($max-vw) {
+// 	$max_vw: #{strip-unit($max-vw / $browser_default_size)};
+// 	@return #{$max_vw}rem;
+// }
+
+// @function convert_min_value($min-value) {
+// 	$min_v: #{strip-unit($min-value / $browser_default_size)};
+// 	@return #{$min_v}rem;
+// }
+
+// @function convert_e_min_value($e-min-value) {
+// 	$eMin_v: #{strip-unit($e-min-value / $browser_default_size)};
+// 	@return #{$eMin_v}rem;
+// }
+
+// @function convert_mid_value($mid-value) {
+// 	$mid_v: #{strip-unit($mid-value / $browser_default_size)};
+// 	@return #{$mid_v}rem;
+// }
+
+// @function convert_max_value($max-value) {
+// 	$max_v: #{strip-unit($max-value / $browser_default_size)};
+// 	@return #{$max_v}rem;
+// }
+
+// .hamFucker {
+// 	font-size: convert_min_vw(320px);
+// 	font-size: convert_mid_vw(800px);
+// 	font-size: convert_max_vw(1267px);
+// 	/*font-size: 696969696px;*/
+// 	/*font-size: 696969696px;*/
+
+
+// 	font-size: convert_min_value(71px);
+// 	font-size: convert_e_min_value(102px);
+// 	font-size: convert_mid_value(71px);
+// 	font-size: convert_max_value(110px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(42px);
+// 	font-size: convert_e_min_value(53px);
+// 	font-size: convert_mid_value(48px);
+// 	font-size: convert_max_value(70px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(12.9px);
+// 	font-size: convert_e_min_value(18.3px);
+// 	font-size: convert_mid_value(12.75px);
+// 	font-size: convert_max_value(20px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(21px);
+// 	font-size: convert_e_min_value(30px);
+// 	font-size: convert_mid_value(22px);
+// 	font-size: convert_max_value(30px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(21px);
+// 	font-size: convert_e_min_value(30px);
+// 	font-size: convert_mid_value(15.317073px);
+// 	font-size: convert_max_value(21px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(4px);
+// 	font-size: convert_e_min_value(30px);
+// 	font-size: convert_mid_value(22px);
+// 	font-size: convert_max_value(30px);
+// 	/*font-size: 696969696px;*/
+// 	font-size: convert_min_value(6px);
+// 	font-size: convert_e_min_value(30px);
+// 	font-size: convert_mid_value(15px);
+// 	font-size: convert_max_value(21px);
+// }
+
+// #hero_image {
+// 	h1 {
+// 		@include flexText2_remConvert(font-size 320px 800px 1267px 71px 102px 71px 110px);
+// 		@include flexText2_remConvert(line-height 320px 800px 1267px 42px 53px 48px 70px);
+// 	}
+
+// 	p {
+// 		@include flexText2_remConvert(font-size 320px 800px 1267px 12.9px 18.3px 12.75px 20px);
+// 		@include flexText2_remConvert(line-height 320px 800px 1267px 21px 30px 22px 30px);
+// 		@include flexText2_remConvert(margin-top 320px 800px 1267px 21px 30px 15.317073px 21px);
+// 	}
+
+// 	.hero__img {
+// 		@include flexText2_remConvert(margin-top 320px 800px 1267px 4px 30px 22px 30px);
+// 		@include flexText2_remConvert(margin-bottom 320px 800px 1267px 6px 30px 15.317073px 21px);
+// 	}
+// }

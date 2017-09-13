@@ -1,0 +1,383 @@
+@import "icon-variables";
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('#{$font_path}/#{$icons_folder}/icomoon.eot?fdxzlp');
+	src: url('#{$font_path}/#{$icons_folder}/icomoon.eot?fdxzlp#iefix') format('embedded-opentype'),
+		 url('#{$font_path}/#{$icons_folder}/icomoon.ttf?fdxzlp') format('truetype'),
+		 url('#{$font_path}/#{$icons_folder}/icomoon.woff?fdxzlp') format('woff'),
+		 url('#{$font_path}/#{$icons_folder}/icomoon.svg?fdxzlp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// .icon-mail_f01 {
+// 	&:before {
+// 		content: $icon-mail_f01;
+// 	}
+// }
+// .icon-mail_f02 {
+// 	&:before {
+// 		content: $icon-mail_f02;
+// 	}
+// }
+// .icon-mail_f03 {
+// 	&:before {
+// 		content: $icon-mail_f03;
+// 	}
+// }
+// .icon-mail_f04 {
+// 	&:before {
+// 		content: $icon-mail_f04;
+// 	}
+// }
+// .icon-mail_f05 {
+// 	&:before {
+// 		content: $icon-mail_f05;
+// 	}
+// }
+// .icon-mail_f06 {
+// 	&:before {
+// 		content: $icon-mail_f06;
+// 	}
+// }
+// .icon-mail_f07 {
+// 	&:before {
+// 		content: $icon-mail_f07;
+// 	}
+// }
+// .icon-mail_f08 {
+// 	&:before {
+// 		content: $icon-mail_f08;
+// 	}
+// }
+// .icon-mail_f09 {
+// 	&:before {
+// 		content: $icon-mail_f09;
+// 	}
+// }
+// .icon-mail_f10 {
+// 	&:before {
+// 		content: $icon-mail_f10;
+// 	}
+// }
+// .icon-mail_f11 {
+// 	&:before {
+// 		content: $icon-mail_f11;
+// 	}
+// }
+// .icon-mail_f12 {
+// 	&:before {
+// 		content: $icon-mail_f12;
+// 	}
+// }
+// .icon-mail_f13 {
+// 	&:before {
+// 		content: $icon-mail_f13;
+// 	}
+// }
+// .icon-mail_f14 {
+// 	&:before {
+// 		content: $icon-mail_f14;
+// 	}
+// }
+// .icon-mail_f15 {
+// 	&:before {
+// 		content: $icon-mail_f15;
+// 	}
+// }
+// .icon-mail_f16 {
+// 	&:before {
+// 		content: $icon-mail_f16;
+// 	}
+// }
+// .icon-mail_f17 {
+// 	&:before {
+// 		content: $icon-mail_f17;
+// 	}
+// }
+// .icon-mail_f18 {
+// 	&:before {
+// 		content: $icon-mail_f18;
+// 	}
+// }
+// .icon-mail_f19 {
+// 	&:before {
+// 		content: $icon-mail_f19;
+// 	}
+// }
+// .icon-mail_f20 {
+// 	&:before {
+// 		content: $icon-mail_f20;
+// 	}
+// }
+// .icon-mail_f21 {
+// 	&:before {
+// 		content: $icon-mail_f21;
+// 	}
+// }
+// .icon-mail_f22 {
+// 	&:before {
+// 		content: $icon-mail_f22;
+// 	}
+// }
+// .icon-mail_f23 {
+// 	&:before {
+// 		content: $icon-mail_f23;
+// 	}
+// }
+// .icon-mail_f24 {
+// 	&:before {
+// 		content: $icon-mail_f24;
+// 	}
+// }
+// .icon-mail_f25 {
+// 	&:before {
+// 		content: $icon-mail_f25;
+// 	}
+// }
+// .icon-mail_f26 {
+// 	&:before {
+// 		content: $icon-mail_f26;
+// 	}
+// }
+// .icon-mail_f27 {
+// 	&:before {
+// 		content: $icon-mail_f27;
+// 	}
+// }
+// .icon-mail_f28 {
+// 	&:before {
+// 		content: $icon-mail_f28;
+// 	}
+// }
+// .icon-mail_f29 {
+// 	&:before {
+// 		content: $icon-mail_f29;
+// 	}
+// }
+// .icon-mail_f30 {
+// 	&:before {
+// 		content: $icon-mail_f30;
+// 	}
+// }
+// .icon-mail_f31 {
+// 	&:before {
+// 		content: $icon-mail_f31;
+// 	}
+// }
+// .icon-mail_f32 {
+// 	&:before {
+// 		content: $icon-mail_f32;
+// 	}
+// }
+// .icon-mail_f33 {
+// 	&:before {
+// 		content: $icon-mail_f33;
+// 	}
+// }
+// .icon-mail_f34 {
+// 	&:before {
+// 		content: $icon-mail_f34;
+// 	}
+// }
+// .icon-mail_f35 {
+// 	&:before {
+// 		content: $icon-mail_f35;
+// 	}
+// }
+// .icon-mail_f36 {
+// 	&:before {
+// 		content: $icon-mail_f36;
+// 	}
+// }
+// .icon-mail_f37 {
+// 	&:before {
+// 		content: $icon-mail_f37;
+// 	}
+// }
+// .icon-mail_f38 {
+// 	&:before {
+// 		content: $icon-mail_f38;
+// 	}
+// }
+// .icon-mail_f39 {
+// 	&:before {
+// 		content: $icon-mail_f39;
+// 	}
+// }
+// .icon-mail_f40 {
+// 	&:before {
+// 		content: $icon-mail_f40;
+// 	}
+// }
+// .icon-mail_f41 {
+// 	&:before {
+// 		content: $icon-mail_f41;
+// 	}
+// }
+// .icon-mail_f42 {
+// 	&:before {
+// 		content: $icon-mail_f42;
+// 	}
+// }
+// .icon-mail_f43 {
+// 	&:before {
+// 		content: $icon-mail_f43;
+// 	}
+// }
+// .icon-mail_f44 {
+// 	&:before {
+// 		content: $icon-mail_f44;
+// 	}
+// }
+// .icon-mail_f45 {
+// 	&:before {
+// 		content: $icon-mail_f45;
+// 	}
+// }
+// .icon-mail_f46 {
+// 	&:before {
+// 		content: $icon-mail_f46;
+// 	}
+// }
+// .icon-mail_f47 {
+// 	&:before {
+// 		content: $icon-mail_f47;
+// 	}
+// }
+// .icon-mail_f48 {
+// 	&:before {
+// 		content: $icon-mail_f48;
+// 	}
+// }
+// .icon-mail_f49 {
+// 	&:before {
+// 		content: $icon-mail_f49;
+// 	}
+// }
+// .icon-mail_f50 {
+// 	&:before {
+// 		content: $icon-mail_f50;
+// 	}
+// }
+// .icon-mail_f51 {
+// 	&:before {
+// 		content: $icon-mail_f51;
+// 	}
+// }
+// .icon-mail_f52 {
+// 	&:before {
+// 		content: $icon-mail_f52;
+// 	}
+// }
+// .icon-mail_f53 {
+// 	&:before {
+// 		content: $icon-mail_f53;
+// 	}
+// }
+// .icon-mail_f54 {
+// 	&:before {
+// 		content: $icon-mail_f54;
+// 	}
+// }
+// .icon-mail_f55 {
+// 	&:before {
+// 		content: $icon-mail_f55;
+// 	}
+// }
+// .icon-mail_f56 {
+// 	&:before {
+// 		content: $icon-mail_f56;
+// 	}
+// }
+
+.icon-branding {
+	&:before {
+		content: $icon-branding;
+	}
+}
+.icon-design {
+	&:before {
+		content: $icon-design;
+	}
+}
+.icon-development {
+	&:before {
+		content: $icon-development;
+	}
+}
+.icon-email {
+	&:before {
+		content: $icon-email;
+	}
+}
+.icon-linkedIn {
+	&:before {
+		content: $icon-linkedIn;
+	}
+}
+.icon-resume {
+	&:before {
+		content: $icon-resume;
+	}
+}
+.icon-soundcloud {
+	&:before {
+		content: $icon-soundcloud;
+	}
+}
+.icon-arrow-right {
+	&:before {
+		content: $icon-arrow-right;
+	}
+}
+.icon-arrow-down {
+	&:before {
+		content: $icon-arrow-down;
+	}
+}
+.icon-arrow-left {
+	&:before {
+		content: $icon-arrow-left;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////
+// creating animated icons /////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+// @mixin icon-animation($frames, $frame_animation, $name) {
+// 	@at-root {
+
+// 		& {
+// 			&:before {
+// 				content: "";
+// 				animation: $name #{$frames / 12}s infinite;
+// 			}
+// 		}
+
+// 		@keyframes #{$name} {
+// 			@for $i from 0 to $frames {
+// 				$frame_stops: ((100 / ($frames - 1)) * $i) * 1%;
+
+// 				#{$frame_stops} {
+// 					// content: "#{icon-mail_f#{$i + 1}}";
+// 					content: nth($frame_animation, $i + 1);
+// 				}
+// 			}
+// 		}
+// 	}
+// }

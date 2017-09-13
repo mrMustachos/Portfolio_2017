@@ -1,0 +1,89 @@
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-ultralight-webfont.woff2') format('woff2'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-ultralight-webfont.woff') format('woff'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-ultralight-webfont.ttf') format('truetype'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-ultralight-webfont.svg#sf_ui_displayultralight') format('svg');
+// 	font-weight: 100;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-thin-webfont.woff2') format('woff2'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-thin-webfont.woff') format('woff'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-thin-webfont.ttf') format('truetype'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-thin-webfont.svg#sf_ui_displaythin') format('svg');
+// 	font-weight: 200;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-light-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-light-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-light-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-light-webfont.svg#sf_ui_displaylight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-regular-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-regular-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-regular-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-regular-webfont.svg#sf_ui_displayregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-medium-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-medium-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-medium-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-medium-webfont.svg#sf_ui_displaymedium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+// @font-face {
+// 	font-family: 'SF Display';
+// 	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-semibold-webfont.woff2') format('woff2'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-semibold-webfont.woff') format('woff'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-semibold-webfont.ttf') format('truetype'),
+// 		 url('#{$font_path}/#{$header_folder}/sfuidisplay-semibold-webfont.svg#sf_ui_displaysemibold') format('svg');
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-bold-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-bold-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-bold-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-bold-webfont.svg#sf_ui_displaybold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-heavy-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-heavy-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-heavy-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-heavy-webfont.svg#sf_ui_displayheavy') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Display';
+	src: url('#{$font_path}/#{$header_folder}/sfuidisplay-black-webfont.woff2') format('woff2'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-black-webfont.woff') format('woff'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-black-webfont.ttf') format('truetype'),
+		 url('#{$font_path}/#{$header_folder}/sfuidisplay-black-webfont.svg#sf_ui_displayblack') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
