@@ -1,7 +1,7 @@
 {
-  "name": "wow",
+  "name": "portfolio_2017",
   "version": "1.0.0",
-  "description": "follow the directions buddy",
+  "description": "Because I've done some cool shit that people need to see",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
