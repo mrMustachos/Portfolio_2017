@@ -1,7 +1,7 @@
 $(window).load(function() {
 
 	function myTimerFunction() {
-		var mydiv = $("#contactFrame").contents().find("form");
+		var mydiv = $("#contactFrame").contents().find("body");
 		var h     = mydiv.height();
 		$('#contactFrame').css('height', h)
 		setTimeout(myTimerFunction, 10);

@@ -38,6 +38,8 @@ figure {
 }
 
 hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -153,6 +155,8 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -177,6 +181,8 @@ fieldset {
 }
 
 legend {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -196,6 +202,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -207,16 +215,22 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   font: inherit;
 }
 
@@ -365,44 +379,56 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-branding:before {
-  content: "";
-}
-
-.icon-design:before {
-  content: "";
-}
-
-.icon-development:before {
-  content: "";
-}
-
-.icon-email:before {
-  content: "";
-}
-
-.icon-linkedIn:before {
-  content: "";
-}
-
-.icon-resume:before {
-  content: "";
-}
-
-.icon-soundcloud:before {
-  content: "";
-}
-
-.icon-arrow-right:before {
+.icon_arrow_down:before {
   content: "";
 }
 
-.icon-arrow-down:before {
+.icon_arrow_left:before {
   content: "";
 }
 
-.icon-arrow-left:before {
+.icon_arrow_right:before {
   content: "";
+}
+
+.icon_branding:before {
+  content: "";
+}
+
+.icon_design:before {
+  content: "";
+}
+
+.icon_development:before {
+  content: "";
+}
+
+.icon_email:before {
+  content: "";
+}
+
+.icon_github:before {
+  content: "";
+}
+
+.icon_jsfiddle:before {
+  content: "";
+}
+
+.icon_linkedIn:before {
+  content: "";
+}
+
+.icon_phish:before {
+  content: "";
+}
+
+.icon_resume:before {
+  content: "";
+}
+
+.icon_soundcloud:before {
+  content: "";
 }
 
 @font-face {
@@ -2514,10 +2540,12 @@ body.view #works {
 }
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
   font-smoothing: antialiased;
@@ -2888,8 +2916,34 @@ Hamburger Menu BTN
   }
 }
 body.form {
-  background: #ffffff;
+  background: transparent;
   border: 0;
+}
+body.form .max-2-of-3 {
+  max-width: 656px;
+}
+body.form .max-2-of-3 h2 {
+  margin-top: 0;
+}
+@media only screen and (min-width: 30rem) {
+  body.form .max-2-of-3 h2 span {
+    display: inline-block;
+  }
+}
+body.form .max-2-of-3 .links {
+  list-style-type: none;
+  padding: 0;
+}
+body.form .max-2-of-3 .links li {
+  display: inline-block;
+}
+body.form .max-2-of-3 .links li a {
+  text-decoration: none;
+  padding-right: .75rem;
+  font-size: 3rem;
+}
+body.form .max-2-of-3 .links li:last-of-type a {
+  padding: 0;
 }
 
 #contactus {
@@ -2945,7 +2999,8 @@ body.form {
   top: 6px;
 }
 #contactus input, #contactus textarea {
-  line-height: calc(1rem + 4px);
+  line-height: calc(2rem);
+  line-height: -webkit-calc(1rem + 4px);
   border: 0 !important;
 }
 
@@ -2973,6 +3028,9 @@ body.form {
 
 .container {
   margin-bottom: 1.5rem;
+}
+.container .col {
+  display: inline-block;
 }
 .container:first-of-type .input.input_filled {
   margin: 0;
@@ -3015,6 +3073,8 @@ body.form {
   border: none;
   border-radius: 0;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 10px;
   width: 100%;
   background: transparent;

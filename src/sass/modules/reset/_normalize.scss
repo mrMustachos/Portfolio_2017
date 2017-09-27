@@ -58,8 +58,8 @@ figure {
 // 1. Add the correct box sizing in Firefox.
 // 2. Show the overflow in Edge and IE.
 hr {
-	// -webkit-box-sizing: content-box;
-	// -moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	height: 0;
 	overflow: visible;
@@ -209,6 +209,8 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
 }
 
 // Remove the inner border and padding in Firefox.
@@ -239,8 +241,8 @@ fieldset {
 // 2. Correct the color inheritance from `fieldset` elements in IE.
 // 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
 legend {
-	// -webkit-box-sizing: border-box;
-	// -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: inherit;
 	display: table;
@@ -265,8 +267,8 @@ textarea {
 // 2. Remove the padding in IE 10-.
 [type="checkbox"],
 [type="radio"] {
-	// -webkit-box-sizing: border-box;
-	// -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 }
@@ -281,6 +283,8 @@ textarea {
 // 2. Correct the outline style in Safari.
 [type="search"] {
 	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	appearance: textfield;
 	outline-offset: -2px;
 }
 
@@ -288,12 +292,16 @@ textarea {
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 // 1. Correct the inability to style clickable types in iOS and Safari.
 // 2. Change font properties to `inherit` in Safari.
 ::-webkit-file-upload-button {
 	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
 	font: inherit;
 }
 

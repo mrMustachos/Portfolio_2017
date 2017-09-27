@@ -5,6 +5,11 @@ $(window).load(function() {
 		$('#nav .logo, #nav .nav_bg').toggleClass('open');
 	});
 
+	$('.menu__item').click(function() {
+		$('.menu').removeClass('open');
+		$('#nav .logo, #nav .nav_bg').removeClass('open');
+	});
+
 	function resize() {
 		if ($(window).width() > 800) {
 			$('.menu, #nav .logo').removeClass('mobile').removeClass('open');

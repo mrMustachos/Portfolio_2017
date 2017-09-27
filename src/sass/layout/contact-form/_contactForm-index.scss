@@ -1,7 +1,42 @@
 body.form {
 	// margin-top: ($baseline);
-	background: $white;
+	background: transparent;
 	border: 0;
+
+	.max-2-of-3 {
+		max-width: 656px;
+
+		h2 {
+			margin-top: 0;
+
+			span {
+				@include min_bpSize(480px) {
+					display: inline-block;
+				}
+			}
+		}
+
+		.links {
+			list-style-type: none;
+			padding: 0;
+
+			li {
+				display: inline-block;
+
+				a {
+					text-decoration: none;
+					padding-right: .75rem;
+					font-size: 3rem;
+				}
+
+				&:last-of-type {
+					a {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
 }
 
 #contactus {
@@ -62,7 +97,8 @@ body.form {
 	}
 
 	input, textarea {
-		line-height: calc(1rem + 4px);
+		line-height: calc(2rem);
+		line-height: -webkit-calc(1rem + 4px);
 		border: 0 !important;
 	}
 }
@@ -95,6 +131,10 @@ body.form {
 
 .container {
 	margin-bottom: $baseline;
+
+	.col {
+		display: inline-block;
+	}
 
 	&:first-of-type {
 		.input {
@@ -158,6 +198,8 @@ body.form {
 	border: none;
 	border-radius: 0;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	padding: 10px;
 	width: 100%;
 	background: transparent;

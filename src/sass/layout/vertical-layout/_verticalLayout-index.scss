@@ -25,10 +25,12 @@
 }
 
 * {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 html {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 100%;
 	font-smoothing: antialiased;

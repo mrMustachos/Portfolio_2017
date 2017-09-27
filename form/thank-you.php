@@ -45,6 +45,9 @@
 </head>
 
 <body class="form">
-	<h2>Thanks for contacting us!</h2>
+	<div class="max-2-of-3">
+		<h2><span>Thanks for reaching out I'll get back </span><span>to you as soon as I can.</span></h2>
+		<p>Then by all means, please drop me a line and lets have a chat! I’m available for freelance work on a project by project basis, as well as any long term career opportunities.</p>
+	</div>
 </body>
 </html>

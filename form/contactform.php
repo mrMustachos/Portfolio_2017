@@ -81,6 +81,30 @@ if(isset($_POST['submitted'])) {
 	<script src="../dist/js/formScript.min.js"></script>
 </head>
 <body class="form">
+	<div class="max-2-of-3">
+		<h2><span>Have a project you want to work on </span><span>or just want wanna say hi?</span></h2>
+		<p>Then by all means, please drop me a line and lets have a chat! I’m available for freelance work on a project by project basis, as well as any long term career opportunities.</p>
+		<ul class="links">
+			<li>
+				<a href="#"><i class="icon_linkedIn"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon_github"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon_jsfiddle"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon_resume"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon_soundcloud"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon_phish"></i></a>
+			</li>
+		</ul>
+	</div>
 	<form id='contactus' action='<?php echo $formproc->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
 		<div class="grid">
 			<div class="row">
