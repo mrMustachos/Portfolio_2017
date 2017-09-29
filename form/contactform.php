@@ -84,24 +84,36 @@ if(isset($_POST['submitted'])) {
 	<div class="max-2-of-3">
 		<h2><span>Have a project you want to work on </span><span>or just want wanna say hi?</span></h2>
 		<p>Then by all means, please drop me a line and lets have a chat! I’m available for freelance work on a project by project basis, as well as any long term career opportunities.</p>
-		<ul class="links">
-			<li>
-				<a href="https://www.linkedin.com/in/bill-domanick-37459221/" alt="My LinkedIn" target="_blank"><i class="icon_linkedIn"></i></a>
+		<ul class="row links">
+			<li class="col col-1-of-8">
+				<a href="https://www.linkedin.com/in/bill-domanick-37459221/" alt="My LinkedIn" target="_blank">
+					<i class="icon_linkedIn"></i>
+				</a>
 			</li>
-			<li>
-				<a href="#" alt="My Resume" target="_blank"><i class="icon_resume"></i></a>
+			<li class="col col-1-of-8">
+				<a href="#" alt="My Resume" target="_blank">
+					<i class="icon_resume"></i>
+				</a>
 			</li>
-			<li>
-				<a href="https://github.com/mrMustachos" alt="GitHub - mrMustachos" target="_blank"><i class="icon_github"></i></a>
+			<li class="col col-1-of-8">
+				<a href="https://github.com/mrMustachos" alt="GitHub - mrMustachos" target="_blank">
+					<i class="icon_github"></i>
+				</a>
 			</li>
-			<li>
-				<a href="https://jsfiddle.net/user/bdomanick/fiddles/" alt="jsFiddle - bdomanick" target="_blank"><i class="icon_jsfiddle"></i></a>
+			<li class="col col-1-of-8">
+				<a href="https://jsfiddle.net/user/bdomanick/fiddles/" alt="jsFiddle - bdomanick" target="_blank">
+					<i class="icon_jsfiddle"></i>
+				</a>
 			</li>
-			<li>
-				<a href="https://soundcloud.com/billydomanick/likes" alt="SoundCloud - My Likes" target="_blank"><i class="icon_soundcloud"></i></a>
+			<li class="col col-1-of-8">
+				<a href="https://soundcloud.com/billydomanick/likes" alt="SoundCloud - My Likes" target="_blank">
+					<i class="icon_soundcloud"></i>
+				</a>
 			</li>
-			<li>
-				<a href="http://phishtracks.com/shows/2017-07-21" alt="Phish" target="_blank"><i class="icon_phish"></i></a>
+			<li class="col col-1-of-8">
+				<a href="http://phishtracks.com/shows/2017-07-21" alt="Phish" target="_blank">
+					<i class="icon_phish"></i>
+				</a>
 			</li>
 		</ul>
 	</div>

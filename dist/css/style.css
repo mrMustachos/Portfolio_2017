@@ -3464,6 +3464,8 @@ body.form .max-2-of-3 .links {
 }
 body.form .max-2-of-3 .links li {
   display: inline-block;
+  position: relative;
+  left: -10px;
 }
 body.form .max-2-of-3 .links li a {
   text-decoration: none;

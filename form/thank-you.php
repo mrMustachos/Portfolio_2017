@@ -47,25 +47,37 @@
 <body class="form">
 	<div class="max-2-of-3">
 		<h2><span>Thanks for reaching out I'll get back </span><span>to you as soon as I can.</span></h2>
-		<p>Then by all means, please drop me a line and lets have a chat! I’m available for freelance work on a project by project basis, as well as any long term career opportunities.</p>
+		<p>In the meantime have a look at my fancy link. I feel like they're a pretty good way to get to know me.</p>
 		<ul class="links">
 			<li>
-				<a href="https://www.linkedin.com/in/bill-domanick-37459221/" alt="My LinkedIn" target="_blank"><i class="icon_linkedIn"></i></a>
+				<a href="https://www.linkedin.com/in/bill-domanick-37459221/" alt="My LinkedIn" target="_blank">
+					<i class="icon_linkedIn"></i>
+				</a>
 			</li>
 			<li>
-				<a href="#" alt="My Resume" target="_blank"><i class="icon_resume"></i></a>
+				<a href="#" alt="My Resume" target="_blank">
+					<i class="icon_resume"></i>
+				</a>
 			</li>
 			<li>
-				<a href="https://github.com/mrMustachos" alt="GitHub - mrMustachos" target="_blank"><i class="icon_github"></i></a>
+				<a href="https://github.com/mrMustachos" alt="GitHub - mrMustachos" target="_blank">
+					<i class="icon_github"></i>
+				</a>
 			</li>
 			<li>
-				<a href="https://jsfiddle.net/user/bdomanick/fiddles/" alt="jsFiddle - bdomanick" target="_blank"><i class="icon_jsfiddle"></i></a>
+				<a href="https://jsfiddle.net/user/bdomanick/fiddles/" alt="jsFiddle - bdomanick" target="_blank">
+					<i class="icon_jsfiddle"></i>
+				</a>
 			</li>
 			<li>
-				<a href="https://soundcloud.com/billydomanick/likes" alt="SoundCloud - My Likes" target="_blank"><i class="icon_soundcloud"></i></a>
+				<a href="https://soundcloud.com/billydomanick/likes" alt="SoundCloud - My Likes" target="_blank">
+					<i class="icon_soundcloud"></i>
+				</a>
 			</li>
 			<li>
-				<a href="http://phishtracks.com/shows/2017-07-21" alt="Phish" target="_blank"><i class="icon_phish"></i></a>
+				<a href="http://phishtracks.com/shows/2017-07-21" alt="Phish" target="_blank">
+					<i class="icon_phish"></i>
+				</a>
 			</li>
 		</ul>
 	</div>
