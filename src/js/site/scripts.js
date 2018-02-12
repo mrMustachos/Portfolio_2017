@@ -1,7 +1,7 @@
 $(window).load(function() {
 
 	function myTimerFunction() {
-		var mydiv = $("#contactFrame").contents().find("body");
+		var mydiv = $('#contactFrame').contents().find('body');
 		var h     = mydiv.height();
 		$('#contactFrame').css('height', h)
 		setTimeout(myTimerFunction, 10);
@@ -11,16 +11,16 @@ $(window).load(function() {
 
 	svgeezy.init(false, 'png');
 
-	$(".currentYear").text((new Date).getFullYear());
+	$('.currentYear').text((new Date).getFullYear());
 
-	$("img.lazy").unveil(300, function() {
+	$('img.lazy').unveil(300, function() {
 		$(this).load(function() {
 			this.style.opacity = 1;
 		});
 	});
 
 	$('.flexslider').flexslider({
-		animation: "slide",
+		animation: 'slide',
 		start: function(slider){
 			// $('body').removeClass('loading');
 		}
@@ -43,10 +43,10 @@ $(window).load(function() {
 	$(function() {
 
 		// change triggers
-		var nav_container = $("#nav");
-		var hero_logo = $(".hero__logo");
+		var nav_container = $('#nav');
+		var hero_logo = $('.hero__logo');
 		var hero_h1 = $('.hero__h1, .project');
-		var nav_height = $("#nav").outerHeight();
+		var nav_height = $('#nav').outerHeight();
 		var menu = $('.menu');
 
 		var nav_logo = $('#nav .logo')
@@ -95,6 +95,13 @@ $(window).load(function() {
 
 	$('.viewer').click(function() {
 		$('body').toggleClass('view');
+	});
+
+	$('.jumper').on('click', function(e) {
+		e.preventDefault();
+		$('body, html').animate({ 
+			scrollTop: $($(this).attr('href')).offset().top 
+		}, 600);
 	});
 
 

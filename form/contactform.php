@@ -91,7 +91,7 @@ if(isset($_POST['submitted'])) {
 				</a>
 			</li>
 			<li class="col col-1-of-8">
-				<a href="#" alt="My Resume" target="_blank">
+				<a href="../dist/pdf/resume_billDomanick.pdf" alt="My Resume" target="_blank">
 					<i class="icon_resume"></i>
 				</a>
 			</li>

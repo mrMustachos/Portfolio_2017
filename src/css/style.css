@@ -4189,7 +4189,7 @@ body.projects #nav .logo {
 }
 #works .col .row.image a:hover h3, #works .col .row.image a:hover span, #works .col .row.image a:hover img {
   transition-delay: 0s;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1.03);
 }
 #works .col .row.image a:hover svg line {
   transition-delay: 0s;
@@ -4215,7 +4215,7 @@ body.projects #nav .logo {
   height: auto;
   max-width: 435px;
   max-height: 294px;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.92);
   backface-visibility: hidden;
   transition: transform 0.5s;
 }

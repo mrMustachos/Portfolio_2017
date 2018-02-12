@@ -55,7 +55,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="My Resume" target="_blank">
+				<a href="../dist/pdf/resume_billDomanick.pdf" alt="My Resume" target="_blank">
 					<i class="icon_resume"></i>
 				</a>
 			</li>
